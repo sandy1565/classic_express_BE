@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+	 	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/classicExpress</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">stupefy</property>
+		<property name="connection_pool_size">true</property>
+		<mapping class="com.classicexpress.entity.Admin" />
+		<mapping class="com.classicexpress.entity.User" />
+		<mapping class="com.classicexpress.entity.Bookings" />
+		<mapping class="com.classicexpress.entity.Item_groups" />
+		<mapping class="com.classicexpress.entity.UserLogin" />
+		<mapping class="com.classicexpress.entity.AdminLogin" />
+		<mapping class="com.classicexpress.entity.Tracking" />
+		<mapping class="com.classicexpress.entity.OrderUpdate" />
+		<mapping class="com.classicexpress.entity.UserBookings" />
+	</session-factory>
+</hibernate-configuration>
